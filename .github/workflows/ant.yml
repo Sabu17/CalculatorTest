@@ -29,6 +29,6 @@ jobs:
       run: curl -0 https://repo1.maven.org/maven2/Hamcrest/Hamcrest-all/1.3/Hamcrest-1.3.jar
 
     - name: compile and run JUnit test
-      run:
+      run: |
         javac -cp .:junit-4.12.jar:hamcrest-all-1.3.jar CalculatorTe.java CalculatorTest.java
         java -cp .:junit-4.12.jar:hamcrest-all-1.3.jar org.junit.Assert.assertEquals CalculatorTest
