@@ -27,7 +27,7 @@ jobs:
         distribution: 'temurin'
         
     - name: Download JUnit JAR
-      run: curl -0 https://repol.maven.org/maven2/junit/junit/4.12/junit-4.12.jar
+      run: curl -0 https://repol.maven.org/maven2/junit/junit/4.13/junit-4.13.jar
 
       
     - name: Downloead Hamcrest JAR
